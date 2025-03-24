@@ -59,7 +59,7 @@ export const BirthdayObj = [
   },
 ];
 
-export const weddingObj = [
+export const WeddingObj = [
   {
     Title: 'Timeless Royal Wedding',
     Description: 'Luxurious decor with regal elements for a grand celebration.',
