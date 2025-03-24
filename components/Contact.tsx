@@ -141,7 +141,7 @@ const Contact = () => {
                   <p
                     className={`${
                       Sucess
-                        ? 'text-green-600 outline-green-600/20 bg-green-400/10'
+                        ? 'text-green-600 rounded-full ring-2 ring-green-500/30 bg-green-400/10'
                         : 'text-rose-600 rounded-full ring-2 ring-rose-500/30 bg-rose-500/10'
                     } py-1 w-max px-2 text-sm font-bold items-center flex justify-center gap-2`}
                   >
