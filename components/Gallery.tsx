@@ -1,7 +1,7 @@
 'use client';
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { BirthdayObj, weddingObj } from '@/lib/Sources';
+import { BirthdayObj, WeddingObj } from '@/lib/Sources';
 import Image from 'next/image';
 import { useState } from 'react';
 
