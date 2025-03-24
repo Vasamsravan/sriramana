@@ -14,5 +14,6 @@ export const getBusinessStatus = () => {
     (currentDay >= 1 && currentDay <= 5 && (currentHour >= 6 || currentHour <= 0)) || // Monday - Friday: 6 AM - 12 AM (Midnight)
     ((currentDay === 6 || currentDay === 0) && currentHour >= 8 && currentHour <= 20); // Saturday & Sunday: 8 AM - 8 PM
 
-  return isOpen ? '🟢 Open Now' : '🔴 Closed (Will respond during business hours)';
+  return isOpen;
+  // ? '🟢 Open Now' : '🔴 Closed (Will respond during business hours)';
 };

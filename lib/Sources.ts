@@ -24,6 +24,40 @@ export const HeroData = [
   },
 ];
 
+export const WeddingObj = [
+  {
+    Title: 'Classic White Wedding',
+    Description: 'Timeless elegance with pristine white decor and delicate floral accents.',
+    image: 'wedding (4).jpg',
+  },
+  {
+    Title: 'Royal Heritage Wedding',
+    Description: 'Experience grandeur with majestic decor inspired by traditional palaces.',
+    image: 'wedding.jpg',
+  },
+  {
+    Title: 'Enchanted Garden Wedding',
+    Description: 'Lush greenery and floral elegance for a whimsical outdoor celebration.',
+    image: 'wedding (1).jpg',
+  },
+  {
+    Title: 'Modern Luxe Wedding',
+    Description: 'Sleek, contemporary decor with a luxurious color palette and refined details.',
+    image: 'wedding (2).jpeg',
+  },
+  {
+    Title: 'Sunset Beach Wedding',
+    Description: 'Romantic seaside ambiance with soft sands, waves, and sunset hues.',
+    image: 'wedding (5).jpg',
+  },
+  {
+    Title: 'Bohemian Bliss Wedding',
+    Description: 'Free-spirited decor with earthy tones, macrame, and vibrant flowers.',
+    image: 'wedding (3).jpg',
+  },
+];
+
+
 export const BirthdayObj = [
   {
     Title: 'Enchanting Fairy Tale Birthday',
@@ -59,36 +93,36 @@ export const BirthdayObj = [
   },
 ];
 
-export const WeddingObj = [
+export const HaldiObj = [
   {
-    Title: 'Timeless Royal Wedding',
+    Title: 'Timeless Royal Haldi',
     Description: 'Luxurious decor with regal elements for a grand celebration.',
-    image: 'wedding (1).jpg',
+    image: 'haldi (1).jpg',
   },
   {
-    Title: 'Romantic Candlelit Wedding',
-    Description: 'Soft lighting and warm tones for an intimate wedding atmosphere.',
-    image: 'wedding (6).jpg',
+    Title: 'Romantic Candlelit Haldi',
+    Description: 'Soft lighting and warm tones for an intimate haldi atmosphere.',
+    image: 'haldi (6).jpg',
   },
   {
-    Title: 'Red & Gold Traditional Wedding',
+    Title: 'Red & Gold Traditional Haldi',
     Description: 'Rich cultural aesthetics with vibrant hues and intricate floral designs.',
-    image: 'wedding (5).jpg',
+    image: 'haldi (5).jpg',
   },
   {
-    Title: 'Floral Paradise Wedding',
-    Description: 'Breathtaking floral arrangements for a dreamy wedding setting.',
-    image: 'wedding (2).jpg',
+    Title: 'Floral Paradise Haldi',
+    Description: 'Breathtaking floral arrangements for a dreamy haldi setting.',
+    image: 'haldi (2).jpg',
   },
   {
     Title: 'Classic White & Gold Theme',
-    Description: 'Elegant and minimalistic decor for a sophisticated wedding.',
-    image: 'wedding (3).jpg',
+    Description: 'Elegant and minimalistic decor for a sophisticated haldi.',
+    image: 'haldi (3).jpg',
   },
   {
-    Title: 'Rustic Outdoor Wedding',
+    Title: 'Rustic Outdoor haldi',
     Description: 'A perfect blend of nature and romance with earthy tones and fairy lights.',
-    image: 'wedding (4).jpg',
+    image: 'haldi (4).jpg',
   },
 ];
 

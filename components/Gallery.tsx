@@ -1,7 +1,8 @@
 'use client';
 
+import ComingSoon from '@/components/ui/ComingSoon';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { BirthdayObj, WeddingObj } from '@/lib/Sources';
+import { BirthdayObj, HaldiObj, WeddingObj } from '@/lib/Sources';
 import Image from 'next/image';
 import { useState } from 'react';
 
@@ -19,15 +20,40 @@ const Gallery = () => {
         </div>
 
         <Tabs defaultValue='wedding' className='w-full'>
-          <TabsList className='mx-auto mb-8 grid w-full lg:max-w-md lg:grid-cols-4 grid-cols-2 h-20 lg:h-9'>
+          <TabsList className='mx-auto mb-8 grid w-full lg:max-w-lg lg:grid-cols-5 grid-cols-2 h-28 lg:h-9 ring-white/10 ring-1'>
             <TabsTrigger value='wedding'>Weddings</TabsTrigger>
+            <TabsTrigger value='haldi'>Haldi</TabsTrigger>
             <TabsTrigger value='birthday'>Birthdays</TabsTrigger>
-            <TabsTrigger value='corporate'>Anniversaries</TabsTrigger>
-            <TabsTrigger value='haldi'>Events</TabsTrigger>
+            <TabsTrigger value='anniversaries'>Anniversaries</TabsTrigger>
+            <TabsTrigger value='events'>Events</TabsTrigger>
           </TabsList>
           <TabsContent value='wedding' className='mt-0'>
             <div className='grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3'>
               {WeddingObj.map((item, index) => (
+                <div key={index} className='group relative overflow-hidden rounded-lg'>
+                  <Image
+                    src={`/images/${item.image}`}
+                    alt={`wedding stage decoration ${index + 1}`}
+                    width={800}
+                    height={600}
+                    loading='lazy'
+                    className={`h-64 w-full object-cover transition-transform duration-500 group-hover:scale-110 ${
+                      isLoading ? 'opacity-0' : 'opacity-100'
+                    }`}
+                    onLoad={() => setIsLoading(false)}
+                  />
+                  <div className='absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100'></div>
+                  <div className='absolute bottom-0 left-0 right-0 p-4 translate-y-full transition-transform duration-300 group-hover:translate-y-0'>
+                    <h3 className='text-lg font-semibold text-white'>{item.Title}</h3>
+                    <p className='text-sm text-zinc-300'>{item.Description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </TabsContent>
+          <TabsContent value='haldi' className='mt-0'>
+            <div className='grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3'>
+              {HaldiObj.map((item, index) => (
                 <div key={index} className='group relative overflow-hidden rounded-lg'>
                   {/* Skeleton Loader */}
                   {isLoading && (
@@ -35,13 +61,11 @@ const Gallery = () => {
                   )}
                   <Image
                     src={`/images/${item.image}`}
-                    alt={`Wedding decoration ${index + 1}`}
+                    alt={`Haldi decoration ${index + 1}`}
                     width={800}
                     height={600}
                     loading='lazy'
-                    className={`${
-                      index === 2 ? 'object-top' : ''
-                    } h-64 w-full object-cover transition-transform duration-500 group-hover:scale-110 ${
+                    className={`h-64 w-full object-cover transition-transform duration-500 group-hover:scale-110 ${
                       isLoading ? 'opacity-0' : 'opacity-100'
                     }`}
                     onLoad={() => setIsLoading(false)}
@@ -79,9 +103,10 @@ const Gallery = () => {
               ))}
             </div>
           </TabsContent>
-          <TabsContent value='corporate' className='mt-0'>
-            <div className='grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3'>
-              {[1, 2, 3, 4, 5, 6].map(item => (
+          <TabsContent value='anniversaries' className='mt-0'>
+            {/* <div className='grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3'> */}
+              <ComingSoon />
+              {/* {[1, 2, 3, 4, 5, 6].map(item => (
                 <div key={item} className='group relative overflow-hidden rounded-lg'>
                   <Image
                     src={`/placeholder.svg?height=600&width=800&text=Corporate+${item}`}
@@ -100,11 +125,12 @@ const Gallery = () => {
                     <p className='text-sm text-zinc-300'>Sophisticated and elegant business event designs</p>
                   </div>
                 </div>
-              ))}
-            </div>
+              ))} */}
+            {/* </div> */}
           </TabsContent>
-          <TabsContent value='haldi' className='mt-0'>
-            <div className='grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3'>
+          <TabsContent value='events' className='mt-0'>
+            <ComingSoon />
+            {/* <div className='grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3'>
               {[1, 2, 3, 4, 5, 6].map(item => (
                 <div key={item} className='group relative overflow-hidden rounded-lg'>
                   <Image
@@ -125,15 +151,9 @@ const Gallery = () => {
                   </div>
                 </div>
               ))}
-            </div>
+            </div> */}
           </TabsContent>
         </Tabs>
-
-        {/* <div className='mt-10 text-center'>
-          <Button variant='outline' className='border-gold text-gold hover:bg-gold/10'>
-            View All Projects <ChevronRight className='ml-2 h-4 w-4' />
-          </Button>
-        </div> */}
       </div>
     </section>
   );
