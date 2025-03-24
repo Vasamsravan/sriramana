@@ -162,7 +162,7 @@ const Contact = () => {
                 <Mail className='mt-1 h-5 w-5 text-gold' />
                 <div>
                   <p className='font-medium'>Email Us</p>
-                  <p className='text-zinc-400'>sriramaanaevents@email.com</p>
+                  <p className='text-zinc-400'>sriramanaevents@email.com</p>
                 </div>
               </div>
               <div className='flex items-start gap-4'>

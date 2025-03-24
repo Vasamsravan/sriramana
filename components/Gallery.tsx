@@ -13,7 +13,7 @@ const Gallery = () => {
       <div className='container'>
         <div className='mb-12 text-center'>
           <h2 className='mb-2 text-3xl font-bold md:text-4xl'>Our Event Gallery</h2>
-          <p className='mx-auto max-w-2xl text-zinc-400'>
+          <p className='mx-auto max-w-3xl text-zinc-400'>
             Browse through our collection of beautifully decorated events and get inspired for your next celebration.
           </p>
         </div>

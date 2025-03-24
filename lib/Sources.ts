@@ -63,32 +63,32 @@ export const WeddingObj = [
   {
     Title: 'Timeless Royal Wedding',
     Description: 'Luxurious decor with regal elements for a grand celebration.',
-    image: 'Wedding (1).jpg',
+    image: 'wedding (1).jpg',
   },
   {
     Title: 'Romantic Candlelit Wedding',
     Description: 'Soft lighting and warm tones for an intimate wedding atmosphere.',
-    image: 'Wedding (6).jpg',
+    image: 'wedding (6).jpg',
   },
   {
     Title: 'Red & Gold Traditional Wedding',
     Description: 'Rich cultural aesthetics with vibrant hues and intricate floral designs.',
-    image: 'Wedding (5).jpg',
+    image: 'wedding (5).jpg',
   },
   {
     Title: 'Floral Paradise Wedding',
     Description: 'Breathtaking floral arrangements for a dreamy wedding setting.',
-    image: 'Wedding (2).jpg',
+    image: 'wedding (2).jpg',
   },
   {
     Title: 'Classic White & Gold Theme',
     Description: 'Elegant and minimalistic decor for a sophisticated wedding.',
-    image: 'Wedding (3).jpg',
+    image: 'wedding (3).jpg',
   },
   {
     Title: 'Rustic Outdoor Wedding',
     Description: 'A perfect blend of nature and romance with earthy tones and fairy lights.',
-    image: 'Wedding (4).jpg',
+    image: 'wedding (4).jpg',
   },
 ];
 
