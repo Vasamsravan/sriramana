@@ -27,7 +27,7 @@ const Gallery = () => {
           </TabsList>
           <TabsContent value='wedding' className='mt-0'>
             <div className='grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3'>
-              {weddingObj.map((item, index) => (
+              {WeddingObj.map((item, index) => (
                 <div key={index} className='group relative overflow-hidden rounded-lg'>
                   {/* Skeleton Loader */}
                   {isLoading && (
