@@ -6,7 +6,7 @@ const outfit = Outfit({ subsets: ['latin'], weight: '400' });
 
 const Testimonials = () => {
   return (
-    <section id='testimonials' className='bg-zinc-900 py-20'>
+    <section id='testimonials' className='bg-black py-20 border-t border-white/10'>
       <div className='container'>
         <div className='mb-12 text-center'>
           <h2 className='mb-2 text-3xl font-bold md:text-4xl'>Client Testimonials</h2>
@@ -17,7 +17,7 @@ const Testimonials = () => {
 
         <div className='grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3'>
           {TestimonialsData.map((testimonial, index) => (
-            <Card key={index} className='border-zinc-800 bg-zinc-900/50'>
+            <Card key={index} className='border-white/5 bg-gray-700/20'>
               <CardContent className='flex flex-col p-6'>
                 <div className='mb-4 text-gold'>
                   {[...Array(5)].map((_, i) => (
