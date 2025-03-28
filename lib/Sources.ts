@@ -1,27 +1,9 @@
-export const HeroData = [
-  {
-    Title: 'Creating Unforgettable Moments for Your Special Events',
-    Description:
-      'Exquisite decorations and flawless event management for weddings, birthdays, corporate events, and more.',
-  },
-  {
-    Title: 'Elevate Your Celebrations with Stunning Decor',
-    Description:
-      'From weddings to birthdays, we craft picture-perfect moments with exquisite floral and theme decorations.',
-  },
-  {
-    Title: 'Transforming Venues into Magical Experiences',
-    Description:
-      'Elegant designs, vibrant themes, and seamless event execution to make your special day unforgettable.',
-  },
-  {
-    Title: 'Crafting Memories, One Event at a Time',
-    Description: 'Experience the perfect blend of creativity and sophistication with our expert event styling.',
-  },
-  {
-    Title: 'Your Vision, Our Expertise',
-    Description: 'Unique, tailor-made event decorations that turn dreams into reality.',
-  },
+export const categories = [
+  { value: 'wedding', label: 'Weddings' },
+  { value: 'haldi', label: 'Haldi' },
+  { value: 'birthday', label: 'Birthdays' },
+  { value: 'anniversaries', label: 'Anniversaries' },
+  { value: 'events', label: 'Events' },
 ];
 
 export const WeddingObj = [
@@ -56,7 +38,6 @@ export const WeddingObj = [
     image: 'wedding (3).jpg',
   },
 ];
-
 
 export const BirthdayObj = [
   {

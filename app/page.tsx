@@ -19,7 +19,7 @@ export default function Home() {
         <Testimonials />
         <Contact />
       </main>
-      <footer className='border-t border-zinc-800 bg-black py-12'>
+      <footer className='border-t border-zinc-800 bg-gray-900 py-12'>
         <Footer />
       </footer>
     </div>

@@ -6,7 +6,7 @@ const outfit = Outfit({ subsets: ['latin'], weight: '400' });
 
 const Testimonials = () => {
   return (
-    <section id='testimonials' className='bg-black py-20 border-t border-white/10'>
+    <section id='testimonials' className='bg-[#201f31] py-20'>
       <div className='container'>
         <div className='mb-12 text-center'>
           <h2 className='mb-2 text-3xl font-bold md:text-4xl'>Client Testimonials</h2>
